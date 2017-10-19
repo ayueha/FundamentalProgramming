@@ -7,11 +7,8 @@ public class Excercises3 {
         Integer formerage = TextIO.getInt();
         System.out.println("How old are you? (Second persion)");
         Integer latterage = TextIO.getInt();
-        Integer gapage = formerage-latterage;
+        Integer gapage = Math.abs(formerage-latterage);
 
-        if (gapage<0){
-            gapage = -(gapage);
-        }
         if (gapage<5){
             System.out.println("Gap is under 5");
         }else if (gapage >=5  && gapage < 10){
